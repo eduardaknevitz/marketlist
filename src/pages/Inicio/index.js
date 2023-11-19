@@ -3,6 +3,8 @@ import Cabecalho from "components/Cabecalho";
 import Card from "components/Card";
 import Rodape from "components/Rodape";
 import Titulo from "components/Titulo";
+import produtos from "json/db.json";
+import styles from "./Inicio.module.css";
 
 function Inicio() {
   return (
@@ -12,11 +14,11 @@ function Inicio() {
       <Titulo>
         <h1>Todos produtos</h1>
       </Titulo>
-      <Card
-        id="1"
-        titulo="produto 1"
-        capa="https://ser.vitao.com.br/wp-content/uploads/2017/12/shutterstock_252338818-1-920x535.jpg"
-      />
+      <section className={styles.container}>
+        {produtos.map((produto) => {
+          return <Card {...produto} key={produtos.id} />;
+        })}
+      </section>
       <Rodape />
     </>
   );
