@@ -1,13 +1,17 @@
-import Cabecalho from "components/Cabecalho";
 import Banner from "components/Banner";
+import Cabecalho from "components/Cabecalho";
 import Rodape from "components/Rodape";
+import Titulo from "components/Titulo";
 
 function Inicio() {
   return (
     <>
       <Cabecalho />
       <Banner imagem="home" />
-      <Rodape />;
+      <Titulo>
+        <h1>Produtos</h1>
+      </Titulo>
+      <Rodape />
     </>
   );
 }
