@@ -1,26 +1,27 @@
 [
   {
     "id": 1,
-    "titulo": "O labirinto do Logcat",
-    "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img2.png",
-    "link": "https://www.youtube.com/embed/ypvGqZGJBls"
+    "titulo": "Produto 1",
+    "capa": "https://assets.vtex.app/unsafe/1020x930/center/middle/https%3A%2F%2Fcarrefourbrfood.vtexassets.com%2Farquivos%2Fids%2F14647881%2Fkiwi-import-kg---al-1.jpg%3Fv%3D637511850918130000"
   },
   {
     "id": 2,
-    "titulo": "Um componente no espaço",
-    "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img1.png",
-    "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ"
+    "titulo": "Produto 2",
+    "capa": "https://assets.vtex.app/unsafe/1020x930/center/middle/https%3A%2F%2Fcarrefourbrfood.vtexassets.com%2Farquivos%2Fids%2F41574972%2Fcouve-flor-un-1.jpg%3Fv%3D637834064073100000"
   },
   {
     "id": 3,
-    "titulo": "O poderoso JavaScript",
-    "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img4.png",
-    "link": "https://www.youtube.com/embed/N1BSG02z-Mw"
+    "titulo": "Produto 3",
+    "capa": "https://assets.vtex.app/unsafe/1020x930/center/middle/https%3A%2F%2Fcarrefourbrfood.vtexassets.com%2Farquivos%2Fids%2F23667245%2F58580_1.jpg%3Fv%3D637673965234770000"
   },
   {
     "id": 4,
-    "titulo": "Dart, o Caçador de Andróides",
-    "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img3.png",
-    "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    "titulo": "Produto 4",
+    "capa": "https://assets.vtex.app/unsafe/1020x930/center/middle/https%3A%2F%2Fcarrefourbrfood.vtexassets.com%2Farquivos%2Fids%2F129926554%2Fbisnaguinha-pullman-300g-1.jpg%3Fv%3D638302015510570000"
+  },
+  {
+    "id": 5,
+    "titulo": "Produto 5",
+    "capa": "https://assets.vtex.app/unsafe/1020x930/center/middle/https%3A%2F%2Fcarrefourbrfood.vtexassets.com%2Farquivos%2Fids%2F43293168%2F0666d09ab0214c9e98e5faaf4ef37ce0.jpg%3Fv%3D637847923257630000"
   }
 ]
