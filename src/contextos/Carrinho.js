@@ -26,8 +26,7 @@ export function useCarrinhoContext() {
       novaLista.push(novoProduto);
       return setCarrinho(novaLista);
     }
-
-    novaLista.splice(novaLista.indexOf(novoProduto), 1);
+    novaLista = carrinho.filter((fav) => fav.id !== novoProduto.id);
     return setCarrinho(novaLista);
   }
   return {
