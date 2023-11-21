@@ -1,11 +1,17 @@
-import React, { useEffect, useContext, useState } from "react";
-
+import React, { useEffect, useState } from "react";
 import fetchProducts from "../../services/getProdutos";
 import Card from "../Card";
-import fetchCategories from "services/getCategorias";
+import fetchCategories from "../../services/getCategorias";
+import Botoes from "../Botoes";
+import {
+  CategoriaProvider,
+  useCategoriaContext,
+} from "../../contextos/Categorias";
+import style from "../Card/Card.module.css";
 
 function Products() {
   const [products, setProducts] = useState([]);
+  const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
     fetchProducts()
@@ -21,6 +27,7 @@ function Products() {
   useEffect(() => {
     fetchCategories()
       .then((response) => {
+        setCategorias(response);
         console.log(response);
       })
       .catch((error) => {
@@ -29,11 +36,27 @@ function Products() {
   }, []);
 
   return (
-    // (loading && <Loading />) || (
+    <CategoriaProvider>
+      <ProductsContent products={products} categorias={categorias} />
+    </CategoriaProvider>
+  );
+}
+
+function ProductsContent({ products, categorias }) {
+  const { categoriaSelecionada } = useCategoriaContext();
+
+  const produtosFiltrados = categoriaSelecionada
+    ? products.filter((produto) => produto.category === categoriaSelecionada)
+    : products;
+
+  return (
     <section className="products container">
-      {products.map((product) => (
-        <Card key={product.id} data={product} />
-      ))}
+      <Botoes categorias={categorias} />
+      <div className={style.cardsContainer}>
+        {produtosFiltrados.map((produto) => (
+          <Card key={produto.id} data={produto} />
+        ))}
+      </div>
     </section>
   );
 }

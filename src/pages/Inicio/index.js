@@ -11,7 +11,8 @@ function Inicio() {
   return (
     <>
       <Banner imagem="home" />
-      <Container>
+
+      <Container className={styles.container}>
         <Titulo>
           <h1>Todos produtos</h1>
         </Titulo>

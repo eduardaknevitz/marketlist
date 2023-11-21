@@ -15,6 +15,7 @@ function AppRoutes() {
           <Routes>
             <Route path="/" element={<Inicio />}></Route>
             <Route path="/carrinho" element={<Carrinho />}></Route>
+            {/* <Route path="/getProdutos/:id" element={<getProdutos />}></Route> */}
           </Routes>
         </CarrinhoProvider>
       </Container>

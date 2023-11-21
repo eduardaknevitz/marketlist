@@ -11,7 +11,7 @@ function Cabecalho() {
         <Row>
           <Col xs="12" sm="6">
             <Link to="/">
-              <img src={logo} alt="Cine Tag" />
+              <img src={logo} alt="Logo" />
             </Link>
           </Col>
           <Col xs="12" sm="6">

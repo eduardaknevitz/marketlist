@@ -1,0 +1,10 @@
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.botoes button {
+  /* margin-right: 10px; */
+  margin-bottom: 10px;
+}
