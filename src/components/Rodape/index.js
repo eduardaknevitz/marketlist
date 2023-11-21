@@ -1,9 +1,16 @@
+import React from "react";
+import { Row, Col } from "reactstrap"; // Certifique-se de importar Row e Col do ReactStrap
+
 import styles from "./Rodape.module.css";
 
 function Rodape() {
   return (
     <footer className={styles.rodape}>
-      <h2>Desenvolvido por Eduarda Knevitz Soares</h2>
+      <Row>
+        <Col xs={12} className="text-center">
+          <h2>Desenvolvido por Eduarda Knevitz Soares</h2>
+        </Col>
+      </Row>
     </footer>
   );
 }

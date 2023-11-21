@@ -1,11 +1,24 @@
+import React from "react";
+import { useCarrinhoContext } from "contextos/Carrinho";
+import { Card as ReactstrapCard, CardImg, Button, CardTitle } from "reactstrap";
 import styles from "./Card.module.css";
 
-function Card({ id, titulo, capa }) {
+function Card({ data }) {
+  const { adicionarProduto } = useCarrinhoContext();
+  const { image, id, title } = data;
   return (
-    <div className={styles.container}>
-      <img src={capa} alt={titulo} className={styles.capa} />
-      <h2>{titulo}</h2>
-    </div>
+    <ReactstrapCard className={styles.container}>
+      <CardImg top src={image} alt={title} className={styles.capa} />
+      <CardTitle tag="h2">{title}</CardTitle>
+      <Button
+        color="primary"
+        onClick={() => {
+          adicionarProduto({ id, title, image });
+        }}
+      >
+        Adicionar
+      </Button>
+    </ReactstrapCard>
   );
 }
 
