@@ -1,10 +1,9 @@
-// components/Botoes.js
 import React from "react";
 import { Button } from "reactstrap";
 import { useCategoriaContext } from "../../contextos/Categorias";
-import styles from "./Botoes.module.css";
+import styles from "./BotoesFiltro.module.css";
 
-function Botoes({ categorias }) {
+function BotoesFiltro({ categorias }) {
   const { handleCategoriaChange } = useCategoriaContext();
 
   const categoriaLabels = {
@@ -33,4 +32,4 @@ function Botoes({ categorias }) {
   );
 }
 
-export default Botoes;
+export default BotoesFiltro;

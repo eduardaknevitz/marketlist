@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import fetchProducts from "../../services/getProdutos";
 import Card from "../Card";
 import fetchCategories from "../../services/getCategorias";
-import Botoes from "../Botoes";
+import BotoesFiltro from "../Botoes";
 import {
   CategoriaProvider,
   useCategoriaContext,
@@ -51,7 +51,7 @@ function ProductsContent({ products, categorias }) {
 
   return (
     <section className="products container">
-      <Botoes categorias={categorias} />
+      <BotoesFiltro categorias={categorias} />
       <div className={style.cardsContainer}>
         {produtosFiltrados.map((produto) => (
           <Card key={produto.id} data={produto} />
