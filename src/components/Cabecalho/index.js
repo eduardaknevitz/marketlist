@@ -16,7 +16,7 @@ function Cabecalho() {
           </Col>
           <Col xs="12" sm="6">
             <nav>
-              <CabecalhoLink url="/">Home</CabecalhoLink>
+              <CabecalhoLink url="/inicio">Home</CabecalhoLink>
               <CabecalhoLink url="/Carrinho">Carrinho</CabecalhoLink>
             </nav>
           </Col>

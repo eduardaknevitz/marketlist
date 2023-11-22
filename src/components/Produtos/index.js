@@ -16,7 +16,6 @@ function Products() {
   useEffect(() => {
     fetchProducts()
       .then((response) => {
-        console.log(response);
         setProducts(response);
       })
       .catch((error) => {
@@ -28,7 +27,6 @@ function Products() {
     fetchCategories()
       .then((response) => {
         setCategorias(response);
-        console.log(response);
       })
       .catch((error) => {
         console.log(error);

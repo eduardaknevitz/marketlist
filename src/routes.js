@@ -1,25 +1,29 @@
 import Carrinho from "pages/Carrinho";
 import Inicio from "pages/Inicio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Cabecalho from "components/Cabecalho";
-import Rodape from "components/Rodape";
 import Container from "components/Container";
-import CarrinhoProvider from "contextos/Carrinho";
+import Login from "components/Login";
+import AuthProvider, { useAuthContext } from "contextos/Auth";
 
 function AppRoutes() {
+  const { isLogged } = useAuthContext();
+
   return (
     <BrowserRouter>
-      <Cabecalho />
       <Container>
-        <CarrinhoProvider>
-          <Routes>
-            <Route path="/" element={<Inicio />}></Route>
-            <Route path="/carrinho" element={<Carrinho />}></Route>
-            {/* <Route path="/getProdutos/:id" element={<getProdutos />}></Route> */}
-          </Routes>
-        </CarrinhoProvider>
+        <Routes>
+          {isLogged ? (
+            <>
+              <Route path="/inicio" element={<Inicio />}></Route>
+              <Route path="/carrinho" element={<Carrinho />}></Route>
+            </>
+          ) : (
+            <Route path="/" element={<Login />} />
+          )}
+
+          {/* <Route path="/getProdutos/:id" element={<getProdutos />}></Route> */}
+        </Routes>
       </Container>
-      <Rodape />
     </BrowserRouter>
   );
 }

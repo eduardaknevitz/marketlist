@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "reactstrap"; // Certifique-se de importar Row e Col do ReactStrap
+import { Row, Col } from "reactstrap";
 
 import styles from "./Rodape.module.css";
 
