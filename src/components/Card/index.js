@@ -23,9 +23,9 @@ function Card({ data }) {
         {/* <h2>{formattedPrice}</h2> */}
         <Button
           color="info"
-          onClick={() => {
-            adicionarProduto({ id, title, image });
-          }}
+          // onClick={() => {
+          //   adicionarProduto({ id, title, image });
+          // }}
         >
           Mais informações
         </Button>

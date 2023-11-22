@@ -45,13 +45,10 @@ const Login = () => {
             placeholder="exemplo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className={styles.formInput}
           />
         </FormGroup>
         <FormGroup>
-          <Label for="password" className={styles.formLabel}>
-            Senha:
-          </Label>
+          <Label for="password">Senha:</Label>
           <Input
             type="password"
             name="password"
@@ -59,7 +56,6 @@ const Login = () => {
             placeholder="Senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className={styles.formInput}
           />
         </FormGroup>
         {invalidCredentials && (
