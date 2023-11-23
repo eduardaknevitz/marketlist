@@ -2,10 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 5em;
+  /* padding: 1.1em 20em; */
   background-color: var(--preto);
 }
 
 img {
   width: 60px;
+}
+
+.Col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.buttonsLink {
+  color: white;
+}
+
+.buttonsLink:hover {
+  color: aqua;
 }

@@ -1,29 +1,38 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col } from "reactstrap";
+import {
+  Navbar,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  Container,
+} from "reactstrap";
 import logo from "./logo.png";
 import styles from "./Cabecalho.module.css";
 import CabecalhoLink from "components/CabecalhoLink";
 
 function Cabecalho() {
   return (
-    <header className={styles.cabecalho}>
-      <Container>
-        <Row>
-          <Col xs="12" sm="6">
-            <Link to="/">
-              <img src={logo} alt="Logo" />
-            </Link>
-          </Col>
-          <Col xs="12" sm="6">
-            <nav>
-              <CabecalhoLink url="/inicio">Home</CabecalhoLink>
-              <CabecalhoLink url="/Carrinho">Carrinho</CabecalhoLink>
-              {/* <CabecalhoLink url="/">Logout</CabecalhoLink> */}
-            </nav>
-          </Col>
-        </Row>
+    <Navbar expand="md" className={styles.cabecalho}>
+      <Container className={styles.cabecalho}>
+        <NavbarBrand tag={Link} to="/">
+          <img src={logo} alt="Logo" />
+        </NavbarBrand>
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink tag={Link} to="/inicio" className={styles.buttonsLink}>
+              Home
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/Carrinho" className={styles.buttonsLink}>
+              Carrinho
+            </NavLink>
+          </NavItem>
+        </Nav>
       </Container>
-    </header>
+    </Navbar>
   );
 }
 

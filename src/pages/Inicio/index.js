@@ -14,7 +14,7 @@ function Inicio() {
       <Banner imagem="home" />
       <Container className={styles.container}>
         <Titulo>
-          <h1>Todos produtos</h1>
+          <h1>Produtos</h1>
         </Titulo>
         <Row>
           <Products />
