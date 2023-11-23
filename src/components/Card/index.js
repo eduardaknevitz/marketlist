@@ -15,7 +15,7 @@ function Card({ data }) {
 
   return (
     <ReactstrapCard className={styles.container}>
-      <Link to={`/getProdutos/${id}`}>
+      <Link to={`/produto/${id}`}>
         <CardImg top src={image} alt={title} className={styles.image} />
         <CardTitle tag="h2" className={styles.title}>
           {title}

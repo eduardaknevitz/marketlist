@@ -18,6 +18,7 @@ function Cabecalho() {
             <nav>
               <CabecalhoLink url="/inicio">Home</CabecalhoLink>
               <CabecalhoLink url="/Carrinho">Carrinho</CabecalhoLink>
+              {/* <CabecalhoLink url="/">Logout</CabecalhoLink> */}
             </nav>
           </Col>
         </Row>

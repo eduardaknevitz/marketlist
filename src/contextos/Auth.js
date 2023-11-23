@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 
 export const AuthContext = createContext();
-AuthContext.displayName = "Carrinho";
+AuthContext.displayName = "AuthContext";
 
 export default function AuthProvider({ children }) {
   const [isLogged, setIsLogged] = useState(false);
