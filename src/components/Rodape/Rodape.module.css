@@ -4,8 +4,9 @@
   background-color: var(--preto);
 }
 
-.rodape h2 {
-  font-size: 16px;
+.rodape p {
+  font-size: 14px;
   font-weight: 400;
   color: var(--branco);
+  margin: 16px 0px 16px 0;
 }
