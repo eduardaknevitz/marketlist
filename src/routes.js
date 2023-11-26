@@ -20,7 +20,7 @@ function AppRoutes() {
               <Route path="/produto/:id" element={<InfoProduto />}></Route>
             </>
           ) : (
-            <Route path="/" element={<Login />} />
+            <Route path="*" element={<Login />} />
           )}
         </Routes>
       </Container>
